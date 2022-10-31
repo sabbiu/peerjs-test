@@ -1,0 +1,189 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*! ../backend */
+
+/*! ../frontend */
+
+/*! ../src/common */
+
+/*! ../src/uuid */
+
+/*! ./../webpack/buildin/global.js */
+
+/*! ./apply_patch */
+
+/*! ./common */
+
+/*! ./connection */
+
+/*! ./constants */
+
+/*! ./context */
+
+/*! ./counter */
+
+/*! ./doc_set */
+
+/*! ./lib/bytesToUuid */
+
+/*! ./lib/rng */
+
+/*! ./op_set */
+
+/*! ./proxies */
+
+/*! ./skip_list */
+
+/*! ./table */
+
+/*! ./text */
+
+/*! ./uuid */
+
+/*! ./watchable_doc */
+
+/*! immutable */
+
+/*! no static exports found */
+
+/*! transit-immutable-js */
+
+/*! transit-js */
+
+/*! uuid/v4 */
+
+/*!*********************!*\
+        !*** ./src/uuid.js ***!
+        \*********************/
+
+/*!***********************!*\
+        !*** ./src/common.js ***!
+        \***********************/
+
+/*!************************!*\
+        !*** ./src/doc_set.js ***!
+        \************************/
+
+/*!**************************!*\
+        !*** ./backend/index.js ***!
+        \**************************/
+
+/*!**************************!*\
+        !*** ./frontend/text.js ***!
+        \**************************/
+
+/*!**************************!*\
+        !*** ./src/automerge.js ***!
+        \**************************/
+
+/*!***************************!*\
+        !*** ./backend/op_set.js ***!
+        \***************************/
+
+/*!***************************!*\
+        !*** ./frontend/index.js ***!
+        \***************************/
+
+/*!***************************!*\
+        !*** ./frontend/table.js ***!
+        \***************************/
+
+/*!***************************!*\
+        !*** ./src/connection.js ***!
+        \***************************/
+
+/*!*****************************!*\
+        !*** ./frontend/context.js ***!
+        \*****************************/
+
+/*!*****************************!*\
+        !*** ./frontend/counter.js ***!
+        \*****************************/
+
+/*!*****************************!*\
+        !*** ./frontend/proxies.js ***!
+        \*****************************/
+
+/*!******************************!*\
+        !*** ./backend/skip_list.js ***!
+        \******************************/
+
+/*!******************************!*\
+        !*** ./src/watchable_doc.js ***!
+        \******************************/
+
+/*!*******************************!*\
+        !*** ./frontend/constants.js ***!
+        \*******************************/
+
+/*!*********************************!*\
+        !*** ./frontend/apply_patch.js ***!
+        \*********************************/
+
+/*!*********************************!*\
+        !*** ./node_modules/uuid/v4.js ***!
+        \*********************************/
+
+/*!***********************************!*\
+        !*** (webpack)/buildin/global.js ***!
+        \***********************************/
+
+/*!********************************************!*\
+        !*** ./node_modules/transit-js/transit.js ***!
+        \********************************************/
+
+/*!**********************************************!*\
+        !*** ./node_modules/uuid/lib/bytesToUuid.js ***!
+        \**********************************************/
+
+/*!**********************************************!*\
+        !*** ./node_modules/uuid/lib/rng-browser.js ***!
+        \**********************************************/
+
+/*!**************************************************!*\
+        !*** ./node_modules/immutable/dist/immutable.js ***!
+        \**************************************************/
+
+/*!****************************************************!*\
+        !*** ./node_modules/transit-immutable-js/index.js ***!
+        \****************************************************/
+
+/** @license React v0.20.2
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
