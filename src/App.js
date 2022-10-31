@@ -1,12 +1,34 @@
 import { useState, useEffect } from "react";
 import Peer from "peerjs";
-import * as Automerge from "@automerge/automerge";
+import { useAutomerge } from "./useAutomerge";
+import Automerge from "automerge";
 
 function App() {
   const [peer, setPeer] = useState();
   const [userId, setUserId] = useState("");
-  const [doc, setDoc] = useState(() => Automerge.init());
-  console.log(doc);
+  const [doc, updateDoc, setDoc] = useAutomerge({
+    users: [],
+    tickets: [],
+  });
+
+  useEffect(() => {
+    sendData(Automerge.save(doc));
+  }, [doc]);
+
+  useEffect(() => {
+    updateDoc((draft) => {
+      draft.users = ["sabbiu"];
+    });
+  }, []);
+
+  const sendAutomergeData = () => {
+    console.log("sending...");
+    updateDoc((draft) => {
+      let sup = [...doc.users, "newuser"];
+      console.log(sup);
+      draft.users = sup;
+    });
+  };
 
   useEffect(() => {
     const newPeer = new Peer();
@@ -16,17 +38,22 @@ function App() {
       conn.on("data", function (data) {
         // Will print 'hi!'
         console.log(data);
+        if (data && data !== "hi") {
+          setDoc(Automerge.merge(doc, Automerge.load(data)));
+        }
       });
     });
 
     return () => newPeer.destroy();
   }, []);
 
-  function callMe() {
+  function sendData(data) {
+    if (!peer) return;
+
     const conn = peer.connect(userId);
     conn.on("open", function () {
       // here you have conn.id
-      conn.send("hi!");
+      conn.send(data);
     });
   }
 
@@ -37,7 +64,9 @@ function App() {
           <p>lorem ipsums lakdfj lsadk fljksd flksjdf</p>
           <pre>{peer.id}</pre>
           <input value={userId} onChange={(e) => setUserId(e.target.value)} />
-          <button onClick={callMe}>Submit</button>
+          <button onClick={() => sendData("hi")}>Submit</button>
+          <pre>{doc.users}</pre>
+          <button onClick={() => sendAutomergeData()}>Send Data</button>
         </div>
       ) : (
         <div>sup</div>
