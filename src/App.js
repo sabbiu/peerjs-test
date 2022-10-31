@@ -39,7 +39,8 @@ function App() {
         // Will print 'hi!'
         console.log(data);
         if (data && data !== "hi") {
-          setDoc(Automerge.merge(doc, Automerge.load(data)));
+          const newDoc = Automerge.merge(doc, Automerge.load(data));
+          setDoc(newDoc);
         }
       });
     });
